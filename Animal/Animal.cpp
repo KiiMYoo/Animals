@@ -14,7 +14,7 @@ public:
 
 	virtual void makesound() = 0;
 
-	~Animal()
+	virtual ~Animal()
 	{
 		cout << "Animal ¼Ò¸êÀÚ È£Ãâ" << endl;
 	}
