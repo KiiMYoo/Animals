@@ -5,7 +5,6 @@ using namespace std;
 
 class Animal
 {
-
 public:
 
 	Animal()
@@ -69,7 +68,6 @@ private:
 class Cow : public Animal
 {
 public:
-public:
 	Cow()
 	{
 		cout << "Cow 생성자 호출" << endl;
@@ -92,17 +90,15 @@ private:
 int main()
 {
 	Animal* myAnimals[3];
-	myAnimals[0] = new Dog();
-	myAnimals[1] = new Cat();
-	myAnimals[2] = new Cow();
-	
-	for (int i = 0; i < 3; i++)
-	{
+	myAnimals[0] = new Dog;
+	myAnimals[1] = new Cat;
+	myAnimals[2] = new Cow;
+
+	for (int i = 0; i <= 2; i++) {
 		myAnimals[i]->makesound();
 	}
 
-	for (int i = 0; i < 3; i++)
-	{
+	for (int i = 0; i <= 2; i++) {
 		delete myAnimals[i];
 	}
 	return 0;
